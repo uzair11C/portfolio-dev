@@ -44,6 +44,9 @@ const Skills = () => {
 									borderRadius: "12px",
 									border: "2px solid #E2E2E21D",
 									minHeight: "30vh",
+									boxShadow: "6px 6px 13px 1px rgba(168,162,162,0.64)",
+									// -webkit-box-shadow: 6px 6px 13px 1px rgba(168,162,162,0.64),
+									// -moz-box-shadow: 6px 6px 13px 1px rgba(168,162,162,0.64),
 								}}
 							>
 								<Stack
@@ -87,6 +90,7 @@ const Skills = () => {
 									borderRadius: "12px",
 									border: "2px solid #E2E2E21D",
 									minHeight: "30vh",
+									boxShadow: "6px 6px 13px 1px rgba(168,162,162,0.64)",
 								}}
 							>
 								<Stack
@@ -121,7 +125,7 @@ const Skills = () => {
 							</Paper>
 						</Box>
 					</Grid>
-					<Grid item xs={12} mdm={4}>
+					<Grid item xs={12} md={4}>
 						<Box sx={{ p: "10px" }}>
 							<Paper
 								sx={{
@@ -132,6 +136,7 @@ const Skills = () => {
 									borderRadius: "12px",
 									border: "2px solid #E2E2E21D",
 									minHeight: "30vh",
+									boxShadow: "6px 6px 13px 1px rgba(168,162,162,0.64)",
 								}}
 							>
 								<Stack
