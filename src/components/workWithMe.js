@@ -6,7 +6,7 @@ const WorkWithMe = () => {
 		<Container maxWidth="xl" sx={{ p: "30px", mt: "10px", mb: "10px" }}>
 			<Stack direction="column" justifyContent="center" alignItems="center">
 				<Typography component="h3" variant="h3">
-					Want to work with me?
+					Want to work with me? contact Me!
 				</Typography>
 			</Stack>
 		</Container>
