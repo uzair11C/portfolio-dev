@@ -22,6 +22,10 @@ const Appbar = () => {
 		setAnchorElNav(null);
 	};
 
+	const scrollToContact = () => {
+		document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
 		<AppBar position="fixed" sx={{ background: "#16213E", p: "5px" }}>
 			<Container maxWidth="xl">
@@ -73,19 +77,34 @@ const Appbar = () => {
 							}}
 						>
 							<MenuItem onClick={handleCloseNavMenu}>
-								<Typography variant="body1" textAlign="center">
-									Dashboard
+								<a href="#home">
+									<Typography
+										variant="body1"
+										textAlign="center"
+										sx={{ textDecoration: "none" }}
+									>
+										Home
+									</Typography>
+								</a>
+							</MenuItem>
+							<MenuItem onClick={handleCloseNavMenu}>
+								<Typography
+									variant="body1"
+									textAlign="center"
+									sx={{ textDecoration: "none" }}
+								>
+									<a href="#projects">Projects</a>
 								</Typography>
 							</MenuItem>
 							<MenuItem onClick={handleCloseNavMenu}>
 								<Typography
 									variant="body1"
-									sx={{
-										textDecoration: "none",
-									}}
 									textAlign="center"
+									sx={{ textDecoration: "none" }}
+									onClick={scrollToContact}
 								>
-									My Posts
+									{/* <a href="#contact">Contact</a> */}
+									Contact
 								</Typography>
 							</MenuItem>
 						</Menu>
@@ -126,7 +145,7 @@ const Appbar = () => {
 								textDecoration: "none",
 							}}
 						>
-							Dashboard
+							<a href="#home">Home</a>
 						</Typography>
 						<Typography
 							variant="h5"
@@ -140,7 +159,24 @@ const Appbar = () => {
 								textDecoration: "none",
 							}}
 						>
-							My Posts
+							<a href="#projects">Projects</a>
+						</Typography>
+						<Typography
+							variant="h5"
+							component="h5"
+							onClick={() => {
+								handleCloseNavMenu();
+								scrollToContact();
+							}}
+							sx={{
+								my: 2,
+								color: "white",
+								display: "block",
+								margin: "10px",
+								textDecoration: "none",
+							}}
+						>
+							Contact
 						</Typography>
 					</Box>
 				</Toolbar>
