@@ -1,7 +1,17 @@
-import { Button, Container, Stack, Typography } from "@mui/material";
+import {
+	Button,
+	Container,
+	Stack,
+	Typography,
+	useTheme,
+	useMediaQuery,
+} from "@mui/material";
 import React from "react";
 
 const WorkWithMe = () => {
+	const theme = useTheme();
+
+	const isMobile = useMediaQuery(theme.breakpoints.down(425));
 	return (
 		<Container
 			maxWidth="xl"
@@ -22,10 +32,18 @@ const WorkWithMe = () => {
 				spacing={3}
 				sx={{ p: "10px" }}
 			>
-				<Typography component="h3" variant="h3">
+				<Typography
+					component="h3"
+					variant={isMobile ? "h5" : "h4"}
+					sx={{ textAlign: "center" }}
+				>
 					Interested in working with me?
 				</Typography>
-				<Typography component="h3" variant="h4">
+				<Typography
+					component="h3"
+					variant={isMobile ? "h6" : "h5"}
+					sx={{ textAlign: "center" }}
+				>
 					Contact me on Fiverr and we can start working together!
 				</Typography>
 				<Button
