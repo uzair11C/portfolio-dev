@@ -63,11 +63,20 @@ const HomeBanner = () => {
 					</Typography>
 					<Typography
 						component="p"
-						variant="h5"
-						sx={{ textAlign: isMobile ? "center" : "none" }}
+						variant="h6"
+						sx={{
+							textAlign: isMobile ? "center" : "none",
+							pr: isMobile ? "none" : 3,
+						}}
 					>
-						I am a self-taught front-end web developer and 2D game developer.{" "}
-						<br />I am a student and a free-lancer.
+						{/* I am a self-taught front-end web developer and 2D game developer.{" "}
+						<br />I am a student and a free-lancer. */}
+						Hello there! I am Uzair Abdullah and I am a front-end web developer
+						and 2D game developer. I am really passionate about front-end
+						development and game development. I ensure quality work and 100%
+						buyer and end-user satisfaction. For front-end development, I use
+						React JS and Material UI. For game development, I use Unity 2D and
+						Buildbox 2D.
 					</Typography>
 				</Stack>
 			</Stack>
