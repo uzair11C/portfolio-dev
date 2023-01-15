@@ -10,6 +10,7 @@ function App() {
 	return (
 		<>
 			<Appbar />
+			<div id="home"></div>
 			<HomeBanner />
 			<Skills />
 			<Projects />
