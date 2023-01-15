@@ -15,6 +15,7 @@ const Projects = () => {
 	const isMobile = useMediaQuery(theme.breakpoints.down(425));
 	return (
 		<Container maxWidth="xl" sx={{ p: "30px", mb: "10px" }}>
+			<div id="projects"></div>
 			<Stack
 				direction="column"
 				justifyContent="center"
