@@ -13,7 +13,7 @@ const Contact = () => {
 	const isMobile = useMediaQuery(theme.breakpoints.down(425));
 	return (
 		<Container maxWidth="xl" sx={{ p: "30px" }}>
-			<div id="#contact"></div>
+			<div id="contact"></div>
 			<Stack
 				direction="column"
 				justifyContent="center"

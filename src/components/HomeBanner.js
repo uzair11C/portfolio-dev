@@ -26,7 +26,7 @@ const HomeBanner = () => {
 				mt: "74px",
 			}}
 		>
-			<div id="#home"></div>
+			{/* <div id="home"></div> */}
 			<Stack direction={isMobile ? "column" : "row"} spacing={5}>
 				<Box
 					sx={{
