@@ -44,20 +44,45 @@ const WorkWithMe = () => {
 					variant={isMobile ? "h6" : "h5"}
 					sx={{ textAlign: "center" }}
 				>
-					Contact me on Fiverr and we can start working together!
+					Contact me on Fiverr or Upwork and we can start working together!
 				</Typography>
-				<Button
-					variant="contained"
-					sx={{
-						fontSize: "18px",
-						background:
-							"linear-gradient(108.51deg, #F219A1 53.69%, #AD0CF8 100.22%, #FE007E 100.23%)",
-					}}
-					href="https://www.fiverr.com/uzairabdullah07"
-					target="_blank"
+				<Stack
+					direction="row"
+					justifyContent={"center"}
+					alignItems="center"
+					spacing={5}
 				>
-					Contact me!
-				</Button>
+					<Button
+						variant="contained"
+						sx={{
+							pt: 0,
+							pb: 0,
+							background:
+								"linear-gradient(108.51deg, #F219A1 53.69%, #AD0CF8 100.22%, #FE007E 100.23%)",
+							width: "20vw",
+							height: "7vh",
+						}}
+						href="https://www.fiverr.com/uzairabdullah07"
+						target="_blank"
+					>
+						<img src="/images/fiverr.png" alt="fiverr" width={"100vw"} />
+					</Button>
+					<Button
+						variant="contained"
+						sx={{
+							pt: 0,
+							pb: 0,
+							background:
+								"linear-gradient(108.51deg, #F219A1 53.69%, #AD0CF8 100.22%, #FE007E 100.23%)",
+							width: "20vw",
+							height: "7vh",
+						}}
+						href="https://www.upwork.com/freelancers/~014279899a34ac61da?viewMode=1"
+						target="_blank"
+					>
+						<img src="/images/upwork.png" alt="upwork" width={"100vw"} />
+					</Button>
+				</Stack>
 			</Stack>
 		</Container>
 	);
