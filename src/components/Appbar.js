@@ -26,6 +26,14 @@ const Appbar = () => {
 		document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 	};
 
+	const scrollToHome = () => {
+		document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+	};
+
+	const scrollToProjects = () => {
+		document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
 		<AppBar position="fixed" sx={{ background: "#16213E", p: "5px" }}>
 			<Container maxWidth="xl">
@@ -76,24 +84,33 @@ const Appbar = () => {
 								display: { xs: "block", md: "none" },
 							}}
 						>
-							<MenuItem onClick={handleCloseNavMenu}>
-								<a href="#home">
-									<Typography
-										variant="body1"
-										textAlign="center"
-										sx={{ textDecoration: "none" }}
-									>
-										Home
-									</Typography>
-								</a>
-							</MenuItem>
-							<MenuItem onClick={handleCloseNavMenu}>
+							<MenuItem
+								onClick={() => {
+									handleCloseNavMenu();
+
+									scrollToHome();
+								}}
+							>
 								<Typography
 									variant="body1"
 									textAlign="center"
 									sx={{ textDecoration: "none" }}
 								>
-									<a href="#projects">Projects</a>
+									Home
+								</Typography>
+							</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleCloseNavMenu();
+									scrollToProjects();
+								}}
+							>
+								<Typography
+									variant="body1"
+									textAlign="center"
+									sx={{ textDecoration: "none" }}
+								>
+									Projects
 								</Typography>
 							</MenuItem>
 							<MenuItem onClick={handleCloseNavMenu}>
@@ -103,7 +120,6 @@ const Appbar = () => {
 									sx={{ textDecoration: "none" }}
 									onClick={scrollToContact}
 								>
-									{/* <a href="#contact">Contact</a> */}
 									Contact
 								</Typography>
 							</MenuItem>
@@ -136,44 +152,50 @@ const Appbar = () => {
 						<Typography
 							variant="h5"
 							component="h5"
-							onClick={handleCloseNavMenu}
+							onClick={scrollToHome}
 							sx={{
 								my: 2,
 								color: "white",
 								display: "block",
 								margin: "10px",
 								textDecoration: "none",
+								"&:hover": {
+									cursor: "pointer",
+								},
 							}}
 						>
-							<a href="#home">Home</a>
+							Home
 						</Typography>
 						<Typography
 							variant="h5"
 							component="h5"
-							onClick={handleCloseNavMenu}
+							onClick={scrollToProjects}
 							sx={{
 								my: 2,
 								color: "white",
 								display: "block",
 								margin: "10px",
 								textDecoration: "none",
+								"&:hover": {
+									cursor: "pointer",
+								},
 							}}
 						>
-							<a href="#projects">Projects</a>
+							Projects
 						</Typography>
 						<Typography
 							variant="h5"
 							component="h5"
-							onClick={() => {
-								handleCloseNavMenu();
-								scrollToContact();
-							}}
+							onClick={scrollToContact}
 							sx={{
 								my: 2,
 								color: "white",
 								display: "block",
 								margin: "10px",
 								textDecoration: "none",
+								"&:hover": {
+									cursor: "pointer",
+								},
 							}}
 						>
 							Contact
