@@ -59,7 +59,7 @@ const WorkWithMe = () => {
 							pb: 0,
 							background:
 								"linear-gradient(108.51deg, #F219A1 53.69%, #AD0CF8 100.22%, #FE007E 100.23%)",
-							width: "20vw",
+							width: isMobile ? "30vw" : "15vw",
 							height: "7vh",
 						}}
 						href="https://www.fiverr.com/uzairabdullah07"
@@ -74,7 +74,7 @@ const WorkWithMe = () => {
 							pb: 0,
 							background:
 								"linear-gradient(108.51deg, #F219A1 53.69%, #AD0CF8 100.22%, #FE007E 100.23%)",
-							width: "20vw",
+							width: isMobile ? "30vw" : "15vw",
 							height: "7vh",
 						}}
 						href="https://www.upwork.com/freelancers/~014279899a34ac61da?viewMode=1"
