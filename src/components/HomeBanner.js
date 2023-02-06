@@ -18,12 +18,15 @@ const HomeBanner = () => {
 		<Container
 			maxWidth="xl"
 			sx={{
-				minHeight: "75vh",
-				backgroundImage: "url('/images/portfolioBanner.jpg')",
+				minHeight: "89vh",
+				backgroundImage: "url('/images/banner_bg_2.jpg')",
 				backgroundRepeat: "no-repeat",
 				backgroundSize: isMobile ? "cover" : "100% 100%",
 				p: "30px",
 				mt: "74px",
+				display: "flex",
+				justifyContent: "center",
+				alignItems: "center",
 			}}
 		>
 			{/* <div id="home"></div> */}
@@ -38,7 +41,7 @@ const HomeBanner = () => {
 					}}
 				>
 					<Avatar
-						src="/images/me half.jpg"
+						src="/images/me_half_white_shirt.jpg"
 						alt="me"
 						sx={{
 							width: isMobile ? "40vw" : "25vw",
